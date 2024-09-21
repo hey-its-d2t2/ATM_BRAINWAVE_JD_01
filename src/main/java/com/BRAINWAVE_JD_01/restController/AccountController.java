@@ -1,4 +1,4 @@
-package com.BRAINWAVE_JD_01.controller;
+package com.BRAINWAVE_JD_01.restController;
 
 import com.BRAINWAVE_JD_01.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/accounts")
+@RequestMapping("accounts")
 public class AccountController {
 
     @Autowired

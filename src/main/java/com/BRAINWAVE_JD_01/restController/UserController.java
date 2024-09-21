@@ -1,4 +1,4 @@
-package com.BRAINWAVE_JD_01.controller;
+package com.BRAINWAVE_JD_01.restController;
 
 import com.BRAINWAVE_JD_01.DTO.UserDTO;
 import com.BRAINWAVE_JD_01.service.UserService;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
