@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Check Balance</title>
+</head>
+<body>
+
+<h2>Check Balance</h2>
+<form action="#" th:action="@{/api/accounts/balance}" method="get">
+    <input type="number" name="accountId" placeholder="Account ID">
+    <button type="submit">Check Balance</button>
+</form>
+
+</body>
+</html>
