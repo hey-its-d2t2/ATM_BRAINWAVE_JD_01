@@ -3,6 +3,8 @@ package com.BRAINWAVE_JD_01.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -19,6 +21,7 @@ public class Transaction {
     private String type; // Withdrew/ Deposit / Transfer / Check balance
     private String details; // Mode of transaction
 
+    private LocalDateTime timestamp;
 
     @ManyToOne
     @JoinColumn(name = "account_id")
