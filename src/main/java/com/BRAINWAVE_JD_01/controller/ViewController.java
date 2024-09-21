@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("api")
+@RequestMapping("/api")
 public class ViewController {
 
     @GetMapping
-    public ResponseBody getResponseBody{
-        return "index";
+    public String getResponseBody() {
+        return "index"; // Returns the name of the view (e.g., index.html)
     }
 }
