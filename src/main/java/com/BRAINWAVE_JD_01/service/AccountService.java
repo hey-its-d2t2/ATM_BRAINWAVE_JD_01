@@ -5,7 +5,7 @@ import com.BRAINWAVE_JD_01.entity.User;
 
 public interface AccountService {
     Account createAccount(User user);
-    void deposit(Long accountId, double account);
+    void deposit(Long accountId, double amount);
     void withdraw(Long accountId, double account, String pin);
     void transfer(Long fromAccountId, Long toAccountId, double amount,String pin);
     double checkBalance(Long accountId);
